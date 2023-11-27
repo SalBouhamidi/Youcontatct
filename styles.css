@@ -1,0 +1,11 @@
+.herosection_paragraph{
+    font-family: 'Inknut Antiqua', serif;
+    font-family: 'Inter', sans-serif;
+
+}
+.herosection_paragraph span{
+    color:rgba(240, 188, 2, 1);
+}
+.contactpage{
+    background-color: rgba(16, 69, 121, 0.95);
+}

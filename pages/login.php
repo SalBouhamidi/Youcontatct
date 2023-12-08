@@ -16,7 +16,7 @@ include "navbar.php";
 <body>
     <section class="mx-5">
         <div class="signupform mx-5 h-75 mb-3">
-            <a class="navbar-brand fs-4" href="#"><span>You</span>connect</a>
+            <a class="navbar-brand fs-4" href="index.php"><span>You</span>connect</a>
             <div class="my-2 mx-5">
             <form>
             <div class="mb-3 ">
@@ -29,7 +29,7 @@ include "navbar.php";
             </div>
             <div class="d-flex justify-content-between">
             <p>You don't have an account ?<a class="text-warning" href="signup.php">sign up</a></p>
-            <button type="submit" class="btn btn-warning rounded-pill text-light fw-semibold px-4">Log up</button></div>
+            <button type="submit" class="btn btn-warning rounded-pill text-light fw-semibold px-4">Log in</button></div>
             </form>
         </div>
         </div>

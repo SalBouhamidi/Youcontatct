@@ -12,7 +12,7 @@
     <div class="col">
       <h5>Section</h5>
       <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+        <li class="nav-item mb-2"><a href="contact.php" class="nav-link p-0 text-light">Home</a></li>
         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
@@ -22,8 +22,8 @@
     <div class="col">
       <h5>Section</h5>
       <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+        <li class="nav-item mb-2"><a href="contact.php" class="nav-link p-0 text-light">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Principale page</a></li>
         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
       </ul>
@@ -32,7 +32,7 @@
     <div class="col">
       <h5>Section</h5>
       <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+        <li class="nav-item mb-2"><a href="contact.php" class="nav-link p-0 text-light">Home</a></li>
         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>

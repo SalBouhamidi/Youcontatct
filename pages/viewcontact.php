@@ -27,7 +27,7 @@ include "navbar.php";
         <section class=" border-0">
         <div class="card mt-3 mb-5 mx-4 border border-0 d-flex flex-row-reverse ">
             <div class="w-25  d-flex justify-content-end">
-                <a href="updatecontact.php?<?php $data['id'] ?>"><i class="fa-solid fa-pen-to-square " style="color: #132d4f;"></i></a>
+                <a href="updatecontact.php?id=<?= $data['id'] ?>"><i class="fa-solid fa-pen-to-square " style="color: #132d4f;"></i></a>
                 <a href="delete.php?id=<?= $data['id'] ?>"> <i class="fa-solid fa-trash mx-2" style="color: #132d4f;"></i></a>
             </div>
         <div class="w-100">

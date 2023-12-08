@@ -1,14 +1,26 @@
 <?php 
 require "connectDB.php";
 include "navbar.php";
-$id=$_GET['id'];
-$username=$_POST['username'];
-$phonenumber=$_POST['phonenumber'];
-$email=$_POST['emailuser'];
-$useraddress=$_POST['address'];
-$requete = "SELECT * FROM `contacts` WHERE id='$id'";
-$query=mysqli_query($connect,$requete);
-$showdata = mysqli_fetch_assoc($query);
+if($_SERVER['REQUEST_METHOD'] == 'GET'){
+    $id = $_GET['id'];
+    $requete="SELECT * FROM `contacts` where id = $id";
+    $query=mysqli_query($connect, $requete);
+    $data=mysqli_fetch_assoc($query);
+}else{
+    $id = $_GET['id'];
+    $username=$_POST['username'];
+    $phonenumber=$_POST['phonenumber'];
+    $email=$_POST['emailuser'];
+    $useraddress=$_POST['address'];
+    $query ="UPDATE `contacts` SET`name`='$username',`phone_number`='$phonenumber',
+    `email`='$email',`addresse`='$useraddress' WHERE id = $id";
+    $result= mysqli_query($connect, $query);
+    if(!$result){
+        echo "waaaaa it's not working";
+    }
+    header("location: viewcontact.php");
+
+}
 
 ?>
 <!DOCTYPE html>
@@ -29,23 +41,24 @@ $showdata = mysqli_fetch_assoc($query);
         <div class="signupform h-100">
             <p class="fw-bold ">Welcome to Youconnect, Let's grow your network</p>
             <div class="my-2 mx-5">
-            <form>
+            <form method="POST">
             <div class="mb-3 ">
+ 
                 <label class="form-label">User Name</label>
-                <input type="text" class="form-control" <?php echo $showdata['User Name'] ?>>
+                <input type="text" class="form-control" name="username" value="<?= $data['name']?>">
             </div>
             <div class="mb-3 ">
                 <label  class="form-label">Phone number</label>
-                <input type="text" class="form-control" value="<?php echo $showdata['phone_number'] ?>">
+                <input type="text" class="form-control" name="phonenumber" value="<?=$data['phone_number'] ?>">
             </div>
             <div class="mb-3 ">
                 <label  class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" 
-                value="<?php echo $showdata['email']?>">
+                <input type="email" class="form-control" name="emailuser" id="exampleInputEmail1" aria-describedby="emailHelp" 
+                value="<?=$data['email']?>">
             </div>
             <div class="mb-3 ">
                 <label class="form-label">Address</label>
-                <input type="text" class="form-control" value="<?php echo $showdata['addresse'] ?>" >
+                <input type="text" class="form-control" name="address" value="<?=$data['addresse']?>" >
             </div>
             <div class="d-flex justify-content-end">
             <button type="submit" class="btn btn-warning rounded-pill text-light fw-semibold px-4">Edit</button></div></div>

@@ -1,0 +1,19 @@
+body{
+    margin:0px;
+    height:100%;
+}
+.signupform{
+    color:white;
+    background-color:rgba(16, 69, 121, 1);
+
+}
+.signupform div {
+    font-family: 'Inknut Antiqua', serif;
+
+}
+.btn{
+    font-family: 'Inter', sans-serif;
+}
+.form-control{
+    background-color: rgba(217, 217, 217, 1);
+}
